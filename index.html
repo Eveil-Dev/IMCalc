@@ -1,36 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
     <title>IMCalc</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="title"><h1>IMCalc</h1></div>
-            <div class="input">
-                <label>Nome:</label>
-                <input type="text" id="name" autocomplete="off"></input>
+      <div class="container">
+        <div class="bmi-calc-container">
+          <div class="bmi-calc-content">
+            <h1>IMCalc</h1>
+            <p>What's you height?</p>
+            <div class="number-content">
+              <div class="number">
+                <input type="number" value="0" id="height" />
+              </div>
+              <div class="arrows height-input">
+                <span class="arrow increase"
+                  ><i class="fas fa-chevron-up"></i
+                ></span>
+                <span class="arrow decrease"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </div>
             </div>
-            <div class="input">
-                <label>Altura:</label>
-                <input type="number" id="height" autocomplete="off"></input>
+
+            <p>What's you weight?</p>
+            <div class="number-content">
+              <div class="number">
+                <input type="number" value="0" id="weight" />
+              </div>
+              <div class="arrows weight-input">
+                <span class="arrow increase"
+                  ><i class="fas fa-chevron-up"></i
+                ></span>
+                <span class="arrow decrease"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </div>
             </div>
-            <div class="input">
-                <label>Peso:</label>
-                <input type="number" id="weight" autocomplete="off"></input>
-            </div>
-            <button type="submit" id="calc">Calcular</button>
-            <div class="result" id="result"></div>
+
+            <button class="btn" type="submit" id="calc">Calculate</button>
+          </div>
         </div>
+
+        <div class="bmi-result-container">
+          <div class="bmi-result-content">
+            <h2>Your BMI</h2>
+            <div class="logo">
+              <img src="images/arm-muscle-white.png" />
+            </div>
+            <p id="bmi"></p>
+            <p id="description"></p>
+            <button class="btn hidden-btn" id="again">Again</button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
