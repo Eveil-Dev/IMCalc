@@ -36,7 +36,7 @@ BMICalc is a very efficient and to-the-point BMI calculator where you can quickl
 
 <p>
     <img alt="Mobile IMCalc Interface" title="MobileIMCalc" src="images/IMCalc-Mobile.gif" width="300px" height="515">
-    <img alt="Mobile IMCalc Interface" title="MobileIMCalc" src="images/IMCalc-Image-Mobile.png" width="300px" height="515">
+    <img alt="Mobile IMCalc Interface" title="MobileIMCalc" src="images/IMCalc-ImageMobile.png" width="300px" height="515">
 </p>
 
 <br>
