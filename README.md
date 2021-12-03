@@ -18,6 +18,9 @@
 
 BMICalc is a very efficient and to-the-point BMI calculator where you can quickly check if you have a good Body Mass Index just by entering your height and weight.
 
+<a href="https://evelynmonteiro.github.io/IMCalc/">
+Click here to test !</a>
+
 <br>
 
 ## 🎨 Interface
